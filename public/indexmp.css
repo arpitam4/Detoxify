@@ -1,0 +1,398 @@
+.welcome-to-detoxify {
+    margin: 0;
+    align-self:auto;
+    position:relative;
+    font-size: inherit;
+    font-weight: 800;
+    font-family: inherit;
+    white-space: pre-wrap;
+  }
+  .frame-child,
+  .goal-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: var(--color-mediumturquoise);
+    width: 100%;
+    height: 100%;
+  }
+  .frame-child {
+    background-color: var(--color-white);
+    z-index: 1;
+  }
+  .daily-weekly,
+  .goals {
+    margin: 0;
+  }
+  .daily-weekly-goals-container {
+    position: absolute;
+    top: 79px;
+    left: 11px;
+    z-index: 2;
+  }
+  .ellipse-parent {
+    position: absolute;
+    width: calc(100% - 15px);
+    top: 4px;
+    right: 7px;
+    left: 8px;
+    height: 210px;
+  }
+  .split-frame {
+    align-self: stretch;
+    height: 220px;
+    position: relative;
+  }
+  .split-frame-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 172px 0 0;
+    box-sizing: border-box;
+    min-width: 149px;
+  }
+  .frame-item,
+  .split-frame-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: var(--color-mediumturquoise);
+    width: 100%;
+    height: 100%;
+  }
+  .frame-item {
+    background-color: var(--color-white);
+    mix-blend-mode: normal;
+    z-index: 1;
+  }
+  .stats,
+  .visualization {
+    margin: 0;
+  }
+  .stats-visualization {
+    position: absolute;
+    top: 60px;
+    left: 12px;
+    z-index: 2;
+  }
+  .ellipse-group {
+    position: absolute;
+    width: calc(100% - 15px);
+    top: 5px;
+    right: 7px;
+    left: 8px;
+    height: 210px;
+  }
+  .split-frame1 {
+    height: 220px;
+    flex: 1;
+    position: relative;
+    min-width: 149px;
+  }
+  .frame-group {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0 20px;
+    max-width: 100%;
+  }
+  .text-frame,
+  .text-frame-inner,
+  .text-frame-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .text-frame-inner {
+    width: 588px;
+    flex-direction: row;
+    padding: 0 54px;
+    box-sizing: border-box;
+    font-size: var(--font-size-9xl);
+    font-family: var(--font-radley);
+  }
+  .text-frame,
+  .text-frame-wrapper {
+    flex-direction: column;
+  }
+  .text-frame {
+    align-self: stretch;
+    gap: 37px 0;
+  }
+  .text-frame-wrapper {
+    flex: 1;
+    padding: 0 0 10px;
+    box-sizing: border-box;
+  }
+  .frame-inner,
+  .split-frame-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: var(--color-mediumturquoise);
+    width: 100%;
+    height: 100%;
+  }
+  .frame-inner {
+    background-color: var(--color-white);
+    z-index: 1;
+  }
+  .detox-test {
+    position: absolute;
+    top: 86px;
+    left: 28px;
+    z-index: 2;
+  }
+  .ellipse-container {
+    position: absolute;
+    width: calc(100% - 15px);
+    top: 4px;
+    right: 8px;
+    left: 7px;
+    height: 210px;
+  }
+  .ellipse-div,
+  .split-frame2 {
+    position: absolute;
+    top: 331px;
+    left: 0;
+    width: 230px;
+    height: 220px;
+  }
+  .ellipse-div {
+    top: -300px;
+    left: 222px;
+    border-radius: 50%;
+    background-color: var(--color-aquamarine);
+    width: 979px;
+    height: 774px;
+    z-index: 2;
+  }
+  .split-frame-parent {
+    height: 551px;
+    width: 574px;
+    position: relative;
+    max-width: 100%;
+    margin-left: -214px;
+    font-size: var(--font-size-11xl);
+    font-family: var(--font-radley);
+  }
+  .desktop-1-inner,
+  .frame-parent {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+  }
+  .frame-parent {
+    width: 1148px;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0 0 0 var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .desktop-1-inner {
+    align-self: stretch;
+    align-items: flex-start;
+    justify-content: flex-end;
+    text-align: center;
+    font-size: 64px;
+    color: var(--color-black);
+    font-family: var(--font-georama);
+  }
+  .ellipse-frame {
+    align-self: stretch;
+    height: 571px;
+    position: relative;
+    border-radius: 50%;
+    background-color: var(--color-aquamarine);
+  }
+  .empty-frame {
+    margin-left: -432px;
+    height: 571px;
+    width: 831px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 149px 0 0;
+    box-sizing: border-box;
+    max-width: calc(100% - 612px);
+  }
+  .a-c-h-frame-child,
+  .pair-of-circles {
+    position: absolute;
+    top: 0;
+    
+    border-radius: 50%;
+    height: 100%;
+  }
+  .pair-of-circles {
+    bottom: 0;
+    background-color: var(--color-mediumturquoise);
+    width: 230px;
+  }
+  .a-c-h-frame-child {
+    background-color: var(--color-white);
+    width: 100%;
+    z-index: 1;
+  }
+  .achievement {
+    position: absolute;
+    top: 77px;
+    right:12px;
+    z-index: 2;
+  }
+  .a-c-h-frame {
+    position: absolute;
+    height: calc(100% - 10px);
+    top: 4px;
+    bottom: 6px;
+    left: 8px;
+    width: 215px;
+  }
+  .split-frame3 {
+    height: 220px;
+    width: 248px;
+    position: relative;
+  }
+  .frame-child1,
+  .split-frame-inner {
+    position: absolute;
+    top: 0;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: var(--color-mediumturquoise);
+    width: 100%;
+    height: 100%;
+  }
+  .frame-child1 {
+    background-color: var(--color-white);
+    z-index: 1;
+   
+  }
+  .awareness,
+  .medical {
+    margin: 0;
+  }
+  .medical-awareness {
+    position: absolute;
+    top: 67px;
+    right: 29px;
+    z-index: 2;
+  }
+  .frame-div {
+    position: absolute;
+    width: calc(100% - 15px);
+    top: 4px;
+    right: 76px;
+    left: 8px;
+    height: 210px;
+  }
+  .split-frame4 {
+    height: 220px;
+    width: 230px;
+    position: relative;
+  }
+  .desktop-1,
+  .main-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .main-container {
+    width:auto;
+    height:fit-content;
+    flex-direction: row;
+    padding: 0 var(--padding-xl) 215px 0;
+    box-sizing: border-box;
+    gap: 0 67px;
+   
+    text-align: center;
+    font-size: var(--font-size-11xl);
+    color: var(--color-black);
+    font-family: var(--font-radley);
+  }
+  .desktop-1 {
+    width:auto;
+    position: relative;
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      #8fffea 34.86%,
+      #dffef8 92.01%
+    );
+    overflow: hidden;
+    flex-direction: column;
+    gap: 38px 0;
+    opacity: 0.9;
+    mix-blend-mode: exclusion;
+    letter-spacing: normal;
+  }
+  @media screen and (max-width: 750px) {
+    .welcome-to-detoxify {
+      font-size: 51px;
+    }
+    .detox-test {
+      font-size: var(--font-size-5xl);
+    }
+    .empty-frame {
+      padding-top: 97px;
+      box-sizing: border-box;
+    }
+    .achievement,
+    .medical-awareness {
+      font-size: var(--font-size-5xl);
+    }
+    .main-container {
+      padding-bottom: 140px;
+      box-sizing: border-box;
+    }
+    .desktop-1 {
+      gap: 19px 0;
+    }
+  }
+  @media screen and (max-width: 675px) {
+    .text-frame-inner {
+      padding-left: var(--padding-8xl);
+      padding-right: var(--padding-8xl);
+      box-sizing: border-box;
+    }
+    .main-container {
+      gap: 0 33px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .welcome-to-detoxify {
+      font-size: 38px;
+    }
+
+    .daily-weekly-goals-container {
+      font-size: var(--font-size-3xl);
+    }
+    .split-frame-wrapper {
+      padding-top: 112px;
+      box-sizing: border-box;
+    }
+    .stats-visualization {
+      font-size: var(--font-size-3xl);
+    }
+    .text-frame {
+      gap: 18px 0;
+    }
+    .achievement,
+    .detox-test,
+    .medical-awareness {
+      font-size: var(--font-size-lg);
+    }
+    .main-container {
+      gap: 0 17px;
+    }
+  }

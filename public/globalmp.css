@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-radley: Radley;
+    --font-georama: Georama;
+  
+    /* font sizes */
+    --font-size-11xl: 30px;
+    --font-size-lg: 18px;
+    --font-size-5xl: 24px;
+    --font-size-9xl: 28px;
+    --font-size-3xl: 22px;
+  
+    /* Colors */
+    --color-black: #000;
+    --color-white: #fff;
+    --color-mediumturquoise: #58c5b8;
+    --color-aquamarine: #47f7d7;
+  
+    /* Paddings */
+    --padding-xl: 20px;
+    --padding-8xl: 27px;
+  }

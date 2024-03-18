@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-average-sans: "Average Sans";
+    --font-gemunu-libre: "Gemunu Libre";
+    --font-georama: Georama;
+  
+    /* font sizes */
+    --font-size-6xl: 25px;
+    --font-size-xl: 20px;
+  
+    /* Colors */
+    --color-black: #000;
+  
+    /* Paddings */
+    --padding-18xl: 37px;
+    --padding-14xl: 33px;
+    --padding-xl: 20px;
+  }
