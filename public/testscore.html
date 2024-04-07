@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Score</title>
+  <link rel="stylesheet" href="indexst.css">
+</head>
+<body>
+  
+
+  <div class="container">
+    <div class="background-image"></div>
+    <div class="text-overlay">
+      <h1>Your Test Score</h1>
+  <div id="score"></div>
+        
+    </div>
+</div>
+
+  <script>
+    // Function to parse query parameters from URL
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    // Get the score from the URL query parameter
+    const score = getQueryParam('score');
+
+    // Display the score on the page
+    document.getElementById('score').textContent = `Your score is: ${score}`;
+  </script>
+</body>
+</html>

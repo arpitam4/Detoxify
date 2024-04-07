@@ -116,6 +116,7 @@
   .when-an-unknown1,
   .with-desktop-publishing1 {
     margin: 0;
+    
   }
   .lorem-ipsum-is-simply-container1 {
     align-self: stretch;
@@ -195,9 +196,16 @@
     mix-blend-mode: multiply;
   }
   .desktop-1 {
-    width: 100%;
     position: relative;
+    top:0;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    
     background: radial-gradient(50% 50%at 50% 50%, #8fffea, #dffef8);
+    background-image: url("src/back.jpg");
+    background-size: cover;
     overflow: hidden;
     display: flex;
     flex-direction: column;

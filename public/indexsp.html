@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stats Visualisation</title>
+    <link rel="stylesheet" href="indexsp.css">
+    <link rel="stylesheet" href="globalsp.css" />
+</head>
+<body>
+
+<div class="container">
+    <div class="background-image"></div>
+    <div class="text-overlay">
+        <h1>Spotify Stats</h1>
+        <h2>Top 10 Tracks:</h2>
+        <ul id="topTracks"></ul>
+        <h2>Top 5 Genre:</h2>
+        <ul id="topPlaylists"></ul>
+        <h2>Top 5 Artists:</h2>
+        <ul id="topArtists"></ul>
+    </div>
+</div>
+
+
+<script>
+  // Fetch user's Spotify data and update the HTML
+  async function fetchSpotifyData() {
+    try {
+      const response = await fetch('/spotify-data');
+      const data = await response.json();
+      
+      const topTracksList = document.getElementById('topTracks');
+      const topPlaylistsList = document.getElementById('topPlaylists');
+      const topArtistsList = document.getElementById('topArtists');
+
+      // Update top tracks
+      data.topTracks.forEach(track => {
+        const listItem = document.createElement('li');
+        listItem.textContent = track;
+        topTracksList.appendChild(listItem);
+      });
+
+      // Update top playlists
+      data.topPlaylists.forEach(playlist => {
+        const listItem = document.createElement('li');
+        listItem.textContent = playlist;
+        topPlaylistsList.appendChild(listItem);
+      });
+
+      // Update top artists
+      data.topArtists.forEach(artist => {
+        const listItem = document.createElement('li');
+        listItem.textContent = artist;
+        topArtistsList.appendChild(listItem);
+      });
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  }
+
+  // Call fetchSpotifyData function when the page loads
+  fetchSpotifyData();
+</script>
+
+</body>
+</html>

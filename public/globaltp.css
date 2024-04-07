@@ -1,37 +1,34 @@
 body {
-    margin: 0;
-    line-height: normal;
-  }
-  
-  :root {
-    /* fonts */
-    --font-georama: Georama;
-    --font-open-sans: "Open Sans";
-  
-    /* font sizes */
-    --font-size-13xl: 32px;
-    --font-size-lgi: 19px;
-    --font-size-7xl: 26px;
-  
-    /* Colors */
-    --color-black: #000;
-    --color-aquamarine: #59f8db;
-  
-    /* Gaps */
-    --gap-lg: 18px;
-    --gap-4xl-1: 23.1px;
-    --gap-45xl: 64px;
-    --gap-base: 16px;
-    --gap-13xl: 32px;
-    --gap-15xl: 34px;
-    --gap-mid: 17px;
-  
-    /* Paddings */
-    --padding-xl: 20px;
-    --padding-4xl: 23px;
-    --padding-12xs: 1px;
-    --padding-11xs: 2px;
-    --padding-10xs: 3px;
-    --padding-5xs-3: 7.3px;
-    --padding-3xl: 22px;
-  }
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-georama: Georama;
+  --font-open-sans: "Open Sans";
+
+  /* font sizes */
+  --font-size-13xl: 32px;
+  --font-size-lgi: 19px;
+  --font-size-7xl: 26px;
+
+  /* Colors */
+  --color-black: #000;
+
+  /* Gaps */
+  --gap-lg: 18px;
+  --gap-smi: 13px;
+  --gap-xs: 12px;
+  --gap-11xl: 30px;
+
+  /* Paddings */
+  --padding-45xl: 64px;
+  --padding-xl: 20px;
+  --padding-4xl: 23px;
+  --padding-14xl: 33px;
+  --padding-2xs: 11px;
+  --padding-11xs: 2px;
+  --padding-12xs: 1px;
+  --padding-3xl: 22px;
+}

@@ -185,6 +185,8 @@
     margin-left: -214px;
     font-size: var(--font-size-11xl);
     font-family: var(--font-radley);
+    /* background-image: url("src/back.jpg"); */
+    
   }
   .desktop-1-inner,
   .frame-parent {
@@ -239,6 +241,7 @@
     bottom: 0;
     background-color: var(--color-mediumturquoise);
     width: 230px;
+    left: 192%;
   }
   .a-c-h-frame-child {
     background-color: var(--color-white);
@@ -256,7 +259,7 @@
     height: calc(100% - 10px);
     top: 4px;
     bottom: 6px;
-    left: 8px;
+    left: 195%;
     width: 215px;
   }
   .split-frame3 {
@@ -264,7 +267,16 @@
     width: 248px;
     position: relative;
   }
-  .frame-child1,
+  .frame-child1{
+    position: absolute;
+    top: 0;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: var(--color-mediumturquoise);
+    width: 100%;
+    height: 100%;
+    left:210%;
+  }
   .split-frame-inner {
     position: absolute;
     top: 0;
@@ -273,6 +285,7 @@
     background-color: var(--color-mediumturquoise);
     width: 100%;
     height: 100%;
+    left:196%;
   }
   .frame-child1 {
     background-color: var(--color-white);
@@ -282,12 +295,15 @@
   .awareness,
   .medical {
     margin: 0;
+    left:25px;
+
   }
   .medical-awareness {
     position: absolute;
     top: 67px;
     right: 29px;
     z-index: 2;
+    left: 225%;
   }
   .frame-div {
     position: absolute;
@@ -322,13 +338,19 @@
     font-family: var(--font-radley);
   }
   .desktop-1 {
-    width:auto;
-    position: relative;
-    background: radial-gradient(
-      50% 50%at 50% 50%,
-      #8fffea 34.86%,
-      #dffef8 92.01%
-    );
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+    /* width:auto; */
+    position: absolute;
+    background-image: radial-gradient(#83ffe8 43.69%, #fff);
+    overflow: hidden;
+    background-image: url("src/back.jpg");
+    background-size: cover;
+    opacity: 0.5;
     overflow: hidden;
     flex-direction: column;
     gap: 38px 0;

@@ -1,0 +1,48 @@
+.whatsapp-image-2024-03-19-at-1 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  .stats-visualisation {
+    height: 104px;
+    width: 810px;
+    position: relative;
+    font-weight: 800;
+    display: inline-block;
+    flex-shrink: 0;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .desktop-1 {
+    width: 100%;
+    position: relative;
+    /* background: radial-gradient(50% 50%at 50% 50%, #83ffe8 43.69%, #fff); */
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 55px 20px 865px;
+    box-sizing: border-box;
+    letter-spacing: normal;
+    text-align: center;
+    font-size: 70px;
+    color: #000;
+    font-family: var(--font-georama);
+  }
+  @media screen and (max-width: 767px) {
+    .stats-visualisation {
+      font-size: 56px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+  }
