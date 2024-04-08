@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-georama: Georama;
+  
+    /* font sizes */
+    --font-size-11xl: 30px;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-wheat: #d4d7b3;
+    --color-black: #000;
+  
+    /* Paddings */
+    --padding-xl: 20px;
+  }  

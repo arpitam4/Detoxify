@@ -5,8 +5,8 @@
   bottom: 0;
   left: 0;
   max-height: 100%;
-  width: 1533px;
-  object-fit: contain;
+  width: 100%;
+  object-fit: cover;
 }
 .f-r-a-m-e-container-child,
 .f-r-a-m-e-container-item {
@@ -24,6 +24,7 @@
   background-color: #D9DFD1;
   width: 1149px;
   z-index: 2;
+  opacity: 0.8;
 }
 .f-r-a-m-e-container-inner {
   position: absolute;

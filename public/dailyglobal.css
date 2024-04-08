@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-poppins: Poppins;
+    --font-georama: Georama;
+  
+    /* Colors */
+    --color-black: #000;
+  
+    /* Paddings */
+    --padding-xl: 20px;
+    --padding-13xl: 32px;
+  }

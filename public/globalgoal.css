@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-open-sans: "Open Sans";
+    --font-georama: Georama;
+  
+    /* font sizes */
+    --font-size-19xl: 38px;
+    --font-size-4xl: 23px;
+    --font-size-11xl: 30px;
+  
+    /* Colors */
+    --color-black: #000;
+  }

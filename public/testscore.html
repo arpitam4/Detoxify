@@ -4,19 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test Score</title>
-  <link rel="stylesheet" href="indexst.css">
+  <link rel="stylesheet" href="globalscore.css">
+  <link rel="stylesheet" href="indexscore.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Georama:wght@400;800&display=swap">
 </head>
 <body>
-  
-
-  <div class="container">
-    <div class="background-image"></div>
-    <div class="text-overlay">
-      <h1>Your Test Score</h1>
-  <div id="score"></div>
-        
+  <div class="desktop-1">
+    <div class="whatsapp-image-2024-03-19-at-1">
+      <!-- Your background image goes here if needed -->
     </div>
-</div>
+
+    <div class="your-test-score-wrapper">
+      <h1 class="your-test-score-container">
+        <p class="your-test-score">Your Test Score</p>
+      </h1>
+    </div>
+
+    <div class="good-job-use-our-website-to-d-parent">
+      <div class="good-job-use-container">
+        <p class="good-job-use">Good Job! Use our website to detox.</p>
+        <p class="and-bring-these">And bring these numbers to a ZERO!</p>
+      </div>
+      <div class="frame-wrapper">
+        <div class="rectangle-parent">
+          <div class="frame-child"></div>
+          <!-- <a href="YOUR_GOALS_PAGE_URL_HERE" class="view-your-goals">VIEW YOUR GOALS</a> -->
+          <button onclick="window.location.href='indexgoal.html'" class="view-your-goals">VIEW YOUR GOALS</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script>
     // Function to parse query parameters from URL
@@ -29,7 +46,7 @@
     const score = getQueryParam('score');
 
     // Display the score on the page
-    document.getElementById('score').textContent = `Your score is: ${score}`;
+    document.querySelector('.your-test-score').textContent = `Your score is: ${score}`;
   </script>
 </body>
 </html>
