@@ -50,6 +50,7 @@
   .when-an-unknown,
   .with-desktop-publishing {
     margin: 0;
+    
   }
   .lorem-ipsum-is-simply-container {
     width: 847px;
@@ -57,6 +58,7 @@
     display: inline-block;
     flex-shrink: 0;
     max-width: 100%;
+    right: 5%;
   }
   .lorem-i-psum-parent {
     width: 1042px;
@@ -97,6 +99,8 @@
     width: 308.9px;
     position: relative;
     object-fit: cover;
+    left:10%;
+    
   }
   .screenshot-2024-03-16-132646-1-wrapper {
     width: 766.9px;
@@ -116,6 +120,7 @@
   .when-an-unknown1,
   .with-desktop-publishing1 {
     margin: 0;
+    left: 20%;
     
   }
   .lorem-ipsum-is-simply-container1 {
@@ -129,6 +134,7 @@
     max-width: 100%;
     overflow: hidden;
     object-fit: cover;
+    left:20%;
   }
   .download-1-wrapper {
     width: 693px;
@@ -178,6 +184,7 @@
     font-size: var(--font-size-6xl);
     color: var(--color-black);
     font-family: var(--font-average-sans);
+    
   }
   .screenshot-2024-03-15-165434-1 {
     width: 334.6px;
