@@ -1,0 +1,181 @@
+.achievement {
+    margin: 0;
+    width: 523px;
+    height: 93px;
+    position: relative;
+    font-size: inherit;
+    font-weight: 800;
+    font-family: inherit;
+    display: inline-block;
+    flex-shrink: 0;
+    max-width: 100%;
+    z-index: 1;
+    left: 4%;
+  }
+  .whatsapp-image-2024-03-19-at-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1608px;
+    height: 1128px;
+    object-fit: cover;
+  
+  }
+  .l0-removebg-preview-1-icon {
+    position: absolute;
+    top: 219px;
+    left: 600px;
+    right: 20%;
+    width: 286px;
+    height: 273px;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .whatsapp-image-2024-03-19-at-1-parent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("src/back.jpg");
+    background-size: cover;
+    
+  }
+  .bar,
+  .progress {
+    position: relative;
+    font-weight: 600;
+    z-index: 1;
+  }
+  .progress {
+    align-self: stretch;
+    right:3%
+  
+  
+  }
+  .bar {
+    height: 22px;
+    flex: 1;
+    display:contents;
+  }
+  .bar-chart,
+  .progress-bar {
+    justify-content: flex-start;
+  }
+  .bar-chart {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0 36px;
+    box-sizing: border-box;
+    font-size: 32px;
+    font-family: var(--font-open-sans);
+    left:auto;
+  }
+  .progress-bar {
+    width: 589px;
+    flex-direction: column;
+    gap: 72px;
+    max-width: 100%;
+  }
+  .desktop-1,
+  .progress-bar,
+  .progress-bar-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+  .progress-bar-wrapper {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: flex-end;
+    max-width: 100%;
+    text-align: left;
+    font-size: 27px;
+    font-family: var(--font-poppins);
+  }
+  .progress-container {
+    width: 100%;
+    background-color: #f0f0f0;
+    background-image: url("src/back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  .progress-bar1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 500px; /* Increased width */
+      height: 30px; /* Increased height */
+      background-color:#88918b; /* Black background */
+      border-radius: 6px; /* Rounded corners */
+      left:5%;
+      text-align: center;
+      line-height: 30px; /* Adjusted line height */
+      color: #fff; /* White text color */
+      font-size: 18px; /* Smaller font size */
+  }
+  
+  .desktop-1 {
+    width: 100%;
+    position: relative;
+    background-color:#fff;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 44px 209px 326px 458px;
+    box-sizing: border-box;
+    gap: 426px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    font-size: 64px;
+    color: var(--color-black);
+    font-family: var(--font-georama);
+  }
+  @media screen and (max-width: 750px) {
+    .achievement {
+      font-size: 51px;
+    }
+    .bar {
+      font-size: 26px;
+    }
+    .desktop-1 {
+      gap: 213px;
+      padding-left: 229px;
+      padding-right: 104px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 675px) {
+    .progress-bar {
+      gap: 36px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .achievement {
+      font-size: 38px;
+      
+    }
+    .progress {
+      font-size: 22px;
+    }
+    .bar {
+      font-size: 19px;
+    }
+    .progress-bar {
+      gap: 18px;
+    }
+    .desktop-1 {
+      gap: 106px;
+      padding-left: var(--padding-xl);
+    }
+  }
+  
