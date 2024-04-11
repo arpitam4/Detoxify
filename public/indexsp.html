@@ -6,6 +6,20 @@
     <title>Stats Visualisation</title>
     <link rel="stylesheet" href="indexsp.css">
     <link rel="stylesheet" href="globalsp.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        
+        #myPieChart {
+          position: absolute;
+          /* top: 50%; Align the top of the chart to the vertical center of the page */
+          left: 50%; /* Align the left side of the chart to the horizontal center of the page */
+          top:120%;
+          
+          transform: translate(-50%, -50%); /* Use translate to center the chart precisely */
+          opacity: 1; /* Set opacity of the pie chart canvas to 1 */
+            
+        }
+    </style>
 </head>
 <body>
 
@@ -20,8 +34,8 @@
         <h2>Top 5 Artists:</h2>
         <ul id="topArtists"></ul>
     </div>
+    <canvas id="myPieChart" width="300" height="300"></canvas> <!-- Adjusted dimensions -->
 </div>
-
 
 <script>
   // Fetch user's Spotify data and update the HTML
@@ -61,6 +75,37 @@
 
   // Call fetchSpotifyData function when the page loads
   fetchSpotifyData();
+
+  // JavaScript code to create the pie chart
+  var ctx = document.getElementById('myPieChart').getContext('2d');
+  var myPieChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: ['Filmi', 'Modern Bollywood', 'Pop','Desi Pop','Indian Lo-Fi'],
+      datasets: [{
+        label: 'My First Dataset',
+        data: [20, 15, 10,25,30],
+        backgroundColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 205, 86, 1)',
+          'rgba(0, 255, 0, 1)',
+          'rgba(128, 0, 128, 1)'
+        ],
+        hoverOffset: 4
+      }]
+    },
+    options: {
+      responsive: false,
+    animation: {
+            animateRotate: true, // Enable rotation animation
+            animateScale: true, // Enable scaling animation
+            duration: 1000, // Set the duration of the animation in milliseconds
+            easing: 'easeInOutQuart', // Set the easing function for the animation
+            delay: 2000 // Set the delay before the animation starts in milliseconds
+        }
+      }
+  });
 </script>
 
 </body>
