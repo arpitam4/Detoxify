@@ -1,12 +1,64 @@
 // server.js
 
 const express = require('express');
+const mongoose= require('mongoose')
 const app = express();
 const axios = require('axios');
 const dotenv = require('dotenv');
 const path = require('path');
 
 dotenv.config();
+// mongodb connection
+mongoose.connect('mongodb://localhost:27017/detoxify')
+.then(()=>{
+  console.log('mongodb connected');
+})
+.catch(()=>{
+  console.log('error');
+})
+
+const detoxTestSchema= new mongoose.Schema({
+  name: {
+    type:String,
+    required:true
+  },
+  password: {
+    type:String,
+    required:true
+  },
+  testscore: {
+    type: Number,
+    required:true
+  },
+  level:{
+    type:Number,
+    required:true
+  }
+})
+
+const collection=new mongoose.model('detoxTest',detoxTestSchema)
+
+data=[{
+  name:"Aayushi",
+  password:"123456",
+  testscore:14,
+  level:2
+},
+{
+  name:"Arpita",
+  password:"arpitaaa",
+  testscore:10,
+  level:2
+},
+{
+  name:"Anu",
+  password:"anu123",
+  testscore:18,
+  level:1
+}
+]
+collection.insertMany(data)
+
 
 const PORT = process.env.PORT || 9999;
 
