@@ -22,42 +22,63 @@
   <body>
     <div class="desktop-1">
       <h1 class="achievement">ACHIEVEMENT</h1>
-      <main class="whatsapp-image-2024-03-19-at-1-parent">
-        <!-- <img
+      <main class="content-panel">
+        <img
           class="whatsapp-image-2024-03-19-at-1"
           alt=""
-          src="back.jpg"
-        /> -->
+          src="src/back.jpg"
+        />
+
+        <img
+          class="l0-removebg-preview-2-icon"
+          loading="lazy"
+          alt=""
+          src="src/L0-removebg-preview.png"
+        />
 
         <img
           class="l0-removebg-preview-1-icon"
           loading="lazy"
           alt=""
-          src="src/L0-removebg-preview.png"
+          src="src/L1-removebg-preview.png"
         />
       </main>
-      <div class="progress-bar-wrapper">
-        <div class="progress-bar">
-          <i class="progress">PROGRESS BAR</i>
+      <div class="progress-detail-wrapper">
+        <div class="progress-detail">
+          <div class="progress-bar-container">
+            <div class="progress-bar-wrapper">
+              <div class="progress-label-area">
+                <i class="progress">PROGRESS BAR</i>
+              </div>
+              
+            </div>
+          </div>
           <div class="bar-chart">
             <div class="progress-container">
               <div class="progress-bar1" id="myBar">50%</div>
             </div>
-            
-          </div>
+          
         </div>
-        <script>
-          // Simulate progress
-          let width = 0;
-          const interval = setInterval(() => {
-            if (width >= 40) {
-              clearInterval(interval);
-            } else {
-              width++;
-              document.getElementById("myBar").style.width = width + "%";
-              document.getElementById("myBar").innerHTML = width  + "%";
-            }
-          }, 20);
-          </script>
-      </body>
-      </html>
+        <div class="achieved-badges-till">
+          ACHIEVED BADGES TILL NOW.......
+        </div>
+      </div>
+    </div>
+    
+      
+    </div>
+    <script>
+      // Simulate progress
+      let width = 0;
+      const interval = setInterval(() => {
+        if (width >= 40) {
+          clearInterval(interval);
+        } else {
+          width++;
+          document.getElementById("myBar").style.width = width + "%";
+          document.getElementById("myBar").innerHTML = width  + "%";
+        }
+      }, 20);
+      </script>
+  </body>
+</html>

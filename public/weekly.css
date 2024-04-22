@@ -55,6 +55,8 @@
   .l0-removebg-preview-1-wrapper {
     width: 260px;
     display: flex;
+    /* height: 260px; */
+    bottom: 200px;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;

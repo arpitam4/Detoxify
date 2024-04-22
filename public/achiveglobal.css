@@ -1,17 +1,22 @@
 body {
-    margin: 0;
-    line-height: normal;
-  }
-  
-  :root {
-    /* fonts */
-    --font-open-sans: "Open Sans";
-    --font-poppins: Poppins;
-    --font-georama: Georama;
-  
-    /* Colors */
-    --color-black: #000;
-  
-    /* Paddings */
-    --padding-xl: 20px;
-  }
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-open-sans: "Open Sans";
+  --font-poppins: Poppins;
+  --font-georama: Georama;
+
+  /* font sizes */
+  --font-size-13xl: 32px;
+  --font-size-lgi: 19px;
+  --font-size-7xl: 26px;
+
+  /* Colors */
+  --color-black: #000;
+
+  /* Paddings */
+  --padding-xl: 20px;
+}

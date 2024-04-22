@@ -86,9 +86,9 @@ app.get('/spotify-data', async (req, res) => {
   try {
     // Make requests to the Spotify API here to fetch user data
     // For simplicity, let's just send sample data
-    const topTracks = ['Janam Janam - Pritam, Arijit Singh, Antara Mitra', 'Choo Lo - The Local train', 'Hona Tha Pyar - Atif Aslam, Hadiqa Kiani', 'Kaash Aisa Hota - Darshan Raval', 'Sadqay - Aashir Wajahat, NAYEL, Nehaal Naseem', 'Saware - Pritam, Arijit Singh', 'Husn - Anuv Jain', 'Get him Back! - Olivia Rodrigo', 'Dhokha Dhadi - Arijit Singh, Palak Muchhal, Pritam', 'Heeriye - Jasleen Royal, Arijit Singh'];
-    const topPlaylists = ['Filmi', 'Modern Bollywood', 'Pop', 'Desi Pop', 'Indian Lo-Fi'];
-    const topArtists = ['Aditya Rikhari', 'Pritam', 'Talwiinder', 'Olivia Rodrigo', 'Lana Del Rey'];
+    const topTracks = ['Maula Mere Maula - Roop Kumar Rathod', 'favorite - Isabel LaRosa', 'One Of The Girls ( with JENNIE, Lily Rose Depp - The Weekend, JENNIE, Lily-Rose Depp', 'Cruel Summer - Taylor Swift', 'Lae Dooba - Asees Kaur', 'Labon Ko - Pritam, KK', 'Lat Lag Gayee - Benny Dayal, Shalmali Kholgade, Pritam','Lae Dooba - Sunidhi Chauhan','Baarish - Mohammed Irfan, Gajendra Verma', 'Tera Mera Rishta - Mustafa Zahid'];
+    const topPlaylists = ['Filmi', 'Indian Instrumental', 'Modern Bollywood', 'Dark R&b', 'Hyperpop'];
+    const topArtists = [ 'Pritam', 'Isabel LaRosa', 'Arjit Singh', 'Taylor swift','Darshan Raval'];
 
     // Send the data as JSON response
     res.json({ topTracks, topPlaylists, topArtists });
